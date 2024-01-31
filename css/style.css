@@ -24,7 +24,7 @@
 .nav-header
 {
     display: flex;
-    padding: 0px, 50px, 0px, 50px;
+    padding: 0px 50px 0px 50px;
     gap:30px;
 }
 
@@ -50,6 +50,26 @@ header
 
 
 
+/* Info group */
+
+.info-group
+{
+    margin-bottom: 35px;
+}
+
+.info-group p
+{
+    margin-top: 8px;
+}
+
+.section-info-group
+{
+    margin-bottom: 35px;
+}
+
+
+
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -57,6 +77,7 @@ header
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .main-container {
