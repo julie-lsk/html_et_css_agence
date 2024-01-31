@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -8,6 +9,46 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
+
+
+
+/* Header */
+
+.logo-header
+{
+    width: 61px;
+    height: 19px;
+    padding: 30px 50px 30px 50px;
+}
+
+.nav-header
+{
+    display: flex;
+    padding: 0px, 50px, 0px, 50px;
+    gap:30px;
+}
+
+.nav-header a
+{
+    border-top: 3px solid white;
+    padding-top: 10px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.nav-header a:hover, .nav-header a:focus
+{
+    color: var(--main-color);
+    border-top: 3px solid var(--main-color);
+}
+
+
+
 
 .fa-solid {
     color: var(--main-color);
