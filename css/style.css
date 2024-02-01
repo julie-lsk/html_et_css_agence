@@ -12,6 +12,7 @@
 
 
 
+
 /* Header */
 
 .logo-header
@@ -50,6 +51,7 @@ header
 
 
 
+
 /* Info group */
 
 .info-group
@@ -66,6 +68,53 @@ header
 {
     margin-bottom: 35px;
 }
+
+
+/* Barre de recherche */
+.formulaire-recherche
+{
+    width: 377px;
+    height: 49px;
+    display: flex;
+}
+
+#saisie-ville
+{
+    border: 1px solid #F2F2F2;
+    padding: 0 24px 0 24px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    width: 147px;
+    text-align: center;
+}
+
+#saisie-ville::placeholder
+{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#btn-rechercher
+{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0 15px 15px 0;
+}
+
+#btn-rechercher:hover
+{
+    background-color:rgba(0, 101, 252, 0.75) ;
+}
+
+
+/* Filtres de recherche */
+
+
 
 
 
