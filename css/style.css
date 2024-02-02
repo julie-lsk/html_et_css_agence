@@ -240,26 +240,24 @@ header
     box-sizing: border-box;
 }
 
-.hebergements-and-populaires h2
-{
-    padding-bottom: 30px;
-}
-
 
 
 
 
 /*********** Hébergements ***********/
 
-.hebergements-cards 
-{
-    display: flex;
-    width: 250.33px;
-    height: 207.25px;
+.hebergements {
+    /* width: 65%; */
+    margin-right: 40px;
 }
 
-.hebergements {
-    width: 65%;
+#p-cards /* "Afficher plus" sous les cards */
+{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .hebergements-title
@@ -301,13 +299,44 @@ header
 
 
 
+/*********** Hébergements cards - Flexbox ***********/
+
+.hebergements-cards
+{
+    /* display: flex;
+    flex-wrap: wrap; */
+    max-width: 1440px;
+    /* gap: 30px; */
+    margin-top: 30px;
+    width: 100%;
+}
+
+.hebergements-cards a
+{
+    /* overflow: hidden; */
+    /* flex-shrink: 0; */
+    width: 33%;
+    /* flex: 1 0 calc(33.33% - 20px); */
+}
+
+.card-group1, .card-group2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+
+
 
 
 /*********** Populaires ***********/
 
-.populaires {
+/* .populaires {
     width: 32%;
-}
+} */
 
 .populaires-title {
     display: flex;
