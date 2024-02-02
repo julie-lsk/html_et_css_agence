@@ -22,8 +22,8 @@
         <img src="./images/logo/Booki.png" alt="Logo Booki" class="logo-header">
 
         <nav class="nav-header">
-            <a href=".hebergements" id="hebergement-nav">Hébergements</a> <!-- ATTENTION LIENS A CHANGER !!!!!!!!!!!!!!!!!!!!!!! -->
-            <a href="#" id="activite-nav">Activités</a> <!-- METTRE EN LIEN LES SECTIONS CORRESPONDANTES !!!!!!!!!!!-->
+            <a href="#herbergement-id" id="hebergement-nav">Hébergements</a> <!-- ATTENTION LIENS A CHANGER !!!!!!!!!!!!!!!!!!!!!!! -->
+            <a href="#activites-id" id="activite-nav">Activités</a> <!-- METTRE EN LIEN LES SECTIONS CORRESPONDANTES !!!!!!!!!!!-->
         </nav>
     </header>
 
@@ -84,14 +84,14 @@
 
 
 
-            <!--**************** HEBERGEMENTS ****************-->
+            <!--**************** HEBERGEMENTS + POPULAIRES ****************-->
 
-            <div class="hebergements-and-populaires"> <!-- + POPULAIRES -->
+            <div class="hebergements-and-populaires">
 
                 <section class="hebergements">
 
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" id="herbergement-id">Hébergements à Marseille</h2>
                     </div>
 
                     <!-- 6 cards -->
@@ -260,7 +260,7 @@
                             </a>
                         </div>
 
-                        <p id="p-cards">Afficher plus</p>
+                        <h3 class="subtitle-h3">Afficher plus</h3>
 
                     </div>
 
@@ -367,10 +367,48 @@
 
             </div>
 
+
+
+            <!--**************** ACTIVITES ****************-->
+
+            <div class="activites">
+
+                <h2 class="section-title" id="activites-id">Activités</h2>
+
+            </div>
+
         </main>
 
 
-        <footer> <!-- à faire !!!!!!!!!!!! -->
+
+        <footer> 
+
+            <div class="section-a-propos sections-footer">
+                <h3 class="subtitle-h3">À propos</h3>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </div>
+
+
+            <div class="section-hebergement sections-footer">
+                <h3 class="subtitle-h3">Nos hébergements</h3>
+                <ul>
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
+            </div>
+
+
+            <div class="section-assistance sections-footer">
+                <h3 class="subtitle-h3">Assistance</h3>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
 
         </footer>
 

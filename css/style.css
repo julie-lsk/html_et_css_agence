@@ -251,7 +251,7 @@ header
     margin-right: 40px;
 }
 
-#p-cards /* "Afficher plus" sous les cards */
+.subtitle-h3 /* "Afficher plus" sous les cards */
 {
     font-size: 18px;
     font-weight: 700;
@@ -303,20 +303,14 @@ header
 
 .hebergements-cards
 {
-    /* display: flex;
-    flex-wrap: wrap; */
     max-width: 1440px;
-    /* gap: 30px; */
     margin-top: 30px;
     width: 100%;
 }
 
-.hebergements-cards a
+.hebergements-cards a /* permet aux cards de ne pas être fixes */
 {
-    /* overflow: hidden; */
-    /* flex-shrink: 0; */
     width: 33%;
-    /* flex: 1 0 calc(33.33% - 20px); */
 }
 
 .card-group1, .card-group2
@@ -334,9 +328,9 @@ header
 
 /*********** Populaires ***********/
 
-/* .populaires {
+.populaires {
     width: 32%;
-} */
+}
 
 .populaires-title {
     display: flex;
@@ -377,6 +371,52 @@ header
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
+
+
+
+/*********** Activités ***********/
+
+.activites
+{
+    margin-top: 65px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+/*********** Footer ***********/
+
+footer
+{
+    background-color: var(--main-bg-color);
+    margin-top: 35px;
+    display: flex;
+}
+
+.sections-footer
+{
+    padding: 20px;
+    width: 100%;
+}
+
+.sections-footer ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.sections-footer li
+{
+    padding-top: 15px;
+}
+
+
 
 
 
