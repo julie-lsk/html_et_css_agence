@@ -44,35 +44,38 @@
 
                 <form action="" class="section-info-group formulaire-recherche">
                     <img src="./images/icones/Group 15.svg" alt="Icone localisation">
-                    <input type="text" id="saisie-ville" name="saisie-ville" placeholder="Entrez le nom de la ville">
-                    <input type="submit" value="Rechercher" id="btn-rechercher">
+                    <div id="border-barre">
+                        <input type="text" id="saisie-ville" name="saisie-ville" placeholder="Entrez le nom de la ville">
+                        <input type="submit" value="Rechercher" id="btn-rechercher">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> <!-- Icône rechercher pour téléphones -->
+                    </div>
                 </form>
 
 
                 <div class="section-info-group filtres-recherche">
                     <p>Filtres</p>
-                        
-                    <button id="btn-economique">
-                        <img src="./images/icones/economique.svg" alt="Icone économique">
-                        <p>Économique</p>
-                    </button>
+                    
+                    <div id="filtres-buttons">
+                        <button id="btn-economique">
+                            <img src="./images/icones/economique.svg" alt="Icone économique">
+                            <p>Économique</p>
+                        </button>
 
-                    <button id="btn-familial">
-                        <img src="./images/icones/familial.svg" alt="Icone familial">
-                        <p>Familial</p>
-                    </button>
+                        <button id="btn-familial">
+                            <img src="./images/icones/familial.svg" alt="Icone familial">
+                            <p>Familial</p>
+                        </button>
 
-                    <button id="btn-romantique">
-                        <img src="./images/icones/romantique.svg" alt="Icone romantique">
-                        <p>Romantique</p>
-                    </button>
+                        <button id="btn-romantique">
+                            <img src="./images/icones/romantique.svg" alt="Icone romantique">
+                            <p>Romantique</p>
+                        </button>
 
-                    <button id="btn-pepites">
-                        <img src="./images/icones/pepites.svg" alt="Icone nos pépites">
-                        <p id="p-pepites">Nos pépites</p>
-                    </button>  
-                
-                
+                        <button id="btn-pepites">
+                            <img src="./images/icones/pepites.svg" alt="Icone nos pépites">
+                            <p id="p-pepites">Nos pépites</p>
+                        </button>  
+                    </div>    
                 </div>
 
                 <div class="section-info">
@@ -376,25 +379,25 @@
                 <h2 class="section-title" id="activites-id">Activités à Marseille</h2>
 
                 <div class="section-cards">
-                    <div class="card-activites">
+                    <a href="#" class="card-activites">
                         <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port">
-                        <h3 class="card-title">Vieux-Port</h3>
-                    </div>
+                        <h3 class="card-title h3-activites">Vieux-Port</h3>
+                    </a>
 
-                    <div class="card-activites">
+                    <a href="#" class="card-activites">
                         <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
-                        <h3 class="card-title">Fort de Pomègues</h3>
-                    </div>
+                        <h3 class="card-title h3-activites">Fort de Pomègues</h3>
+                    </a>
 
-                    <div class="card-activites">
+                    <a href="#" class="card-activites">
                         <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
                         <h3 class="card-title">Parc national des Calanques</h3>
-                    </div>
+                    </a>
 
-                    <div class="card-activites">
+                    <a href="#" class="card-activites">
                         <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
-                        <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                    </div>
+                        <h3 class="card-title h3-activites">Notre-Dame-de-la-Garde</h3>
+                    </a>
                 </div>
 
             </div>
@@ -405,7 +408,7 @@
 
         <footer> 
 
-            <div class="sections-footer">
+            <div class="sections-footer footer-responsive">
                 <h3 class="subtitle-h3">À propos</h3>
                 <ul>
                     <li>Fonctionnement du site</li>
@@ -415,7 +418,7 @@
             </div>
 
 
-            <div class="sections-footer">
+            <div class="sections-footer footer-responsive">
                 <h3 class="subtitle-h3">Nos hébergements</h3>
                 <ul>
                     <li>Charte qualité</li>
