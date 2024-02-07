@@ -557,6 +557,11 @@ footer
         justify-content: space-between;
     }
 
+    .populaires-cards .card
+    {
+        height: 77%;
+    }
+
     .populaires-cards a
     {
         width: 30%;
