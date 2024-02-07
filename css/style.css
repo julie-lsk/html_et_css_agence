@@ -430,7 +430,6 @@ header
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
@@ -537,7 +536,7 @@ footer
     .hebergements-and-populaires 
     {
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* pas dans code donné au départ */
     }
 
     .hebergements 
@@ -578,6 +577,12 @@ footer
     .card-title
     {
         font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .populaires-cards .card-title
+    {
+        white-space: wrap;
     }
 
     .card-subtitle
@@ -619,6 +624,11 @@ footer
     .card-activites img
     {
         height: 200px;
+    }
+
+    .activites .card-title
+    {
+        white-space: wrap;
     }
 }
 
@@ -844,6 +854,11 @@ footer
     {
         height: 141px;
     } */
+
+    .card-title
+    {
+        white-space: wrap;
+    }
 
 
     /*********** Footer ***********/
