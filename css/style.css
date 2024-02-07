@@ -180,8 +180,7 @@ header
     font-size: 18px;
     font-weight: 700;
     border-radius: 0 15px 15px 0;
-    display: flex;
-    flex-direction: row;
+    align-self: center;
 }
 
 #btn-rechercher:hover
@@ -189,7 +188,10 @@ header
     background-color:rgba(0, 101, 252, 0.75) ;
 }
 
-
+#pepites-nowrap
+{
+    white-space: nowrap;
+}
 
 
 
@@ -198,39 +200,38 @@ header
 .filtres-recherche
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.filtres-recherche button
+#filtres-buttons div
 {
     display: flex;
     align-items: center;
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    padding: 4px 19px 4px 19px;
-    gap: 10px;
-    margin-left: 15px;
+    border: 2.5px solid #d9d9d9;
+    border-radius: 50px;
+    padding: 4px 19px;
     background-color: white;
+    width: auto;
+    height: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #filtres-buttons
 {
     display: flex;
-    flex-direction: row;
 }
 
-.filtres-recherche button:hover
+#filtres-buttons div:hover
 {
     background-color: #DEEBFF;
 }
 
-.filtres-recherche > button > p
+#filtres-buttons p
 {
     font-size: 17px;
     font-weight: 700;
-    padding-right: 10px;
+    margin-left: 10px;
 }
 
 .filtres-recherche p
@@ -242,31 +243,26 @@ header
 
 #btn-economique
 {
-    width: 173px;
-    height: 50px;
+    width: 167px;
+    margin-left: 15px;
 }
 
 #btn-familial
 {
-    width: 134px;
-    height: 50px;
+    width: 131px;
+    margin-left: 15px;
 }
 
 #btn-romantique
 {
-    width: 170px;
-    height: 50px;
+    width: 164px;
+    margin-left: 15px;
 }
 
 #btn-pepites
 {
-    width: 167px;
-    height: 50px;
-}
-
-#p-pepites
-{
-    white-space: nowrap;
+    width: 161px;
+    margin-left: 15px;
 }
 
 
@@ -382,7 +378,6 @@ header
 
 .hebergements-cards
 {
-    max-width: 1440px;
     margin-top: 30px;
     width: 100%;
 }
@@ -471,8 +466,9 @@ header
 .section-cards
 {
     display: flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     gap: 30px;
+    align-items: stretch; /* rajouté pour mode tablette à voir si ok !!!!! */
 }
 
 .card-activites
@@ -573,6 +569,12 @@ footer
         height: auto;
     }
 
+    /* .card-hebergement img
+    {
+        width: auto;
+        height: auto;
+    } */
+
     .card-title
     {
         font-size: 16px;
@@ -595,6 +597,11 @@ footer
         padding-top: 20px;
     }
 
+    #filtres-buttons p
+    {
+        font-size: 16px;
+    }
+
     #btn-economique
     {
         margin-left: 0;
@@ -602,11 +609,11 @@ footer
 
     .card-activites
     {
-        height: auto;
-        width: auto;
+        height: 270px;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
 
     .card-activites img
@@ -697,12 +704,7 @@ footer
 
     #saisie-ville
     {
-        width: 100%;
-    }
-
-    #border-barre
-    {
-        width: 100%;
+        width: 70%;
     }
 
 
@@ -711,10 +713,18 @@ footer
     #filtres-buttons
     {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 20px;
         justify-content: space-evenly;
+    }
+
+    #filtres-buttons div
+    {
+        height: 50px;
+        margin: 0;
+        width: calc(50% - 10px);
+        box-sizing: border-box;
     }
 
     #filtres-buttons p
@@ -722,22 +732,21 @@ footer
         font-size: 14px;
     }
 
-    #filtres-buttons button
+
+    /* #btn-economique, #btn-familial, #btn-romantique, #btn-pepites
     {
-        height: 50px;
         width: 163px;
+        height: 50px;
         margin: 0;
         width: 45%;
-        justify-content: center;
-    }
+    } */
 
-    /* + zone d'info */
     .section-info i
     {
         height: auto;
         width: 25px;
-        font-size: 10.5px;
-        line-height: 21px;
+        font-size: 12px;
+        line-height: 24px;
     }
 
 
@@ -781,7 +790,7 @@ footer
 
     .fa-chart-line
     {
-        width: 18px;
+        font-size: 18px;
     }
 
     .hebergements-and-populaires > .hebergements
@@ -831,10 +840,11 @@ footer
         gap: 15px;
     }
 
-    .card-activites img
+    /* .card-activites img
     {
         height: 141px;
-    }
+    } */
+
 
     /*********** Footer ***********/
     footer
