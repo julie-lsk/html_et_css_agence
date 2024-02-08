@@ -10,7 +10,6 @@
     --filter-bg-color: #DEEBFF;
 }
 
-
 .fa-solid {
     color: var(--main-color);
 }
@@ -127,7 +126,7 @@ header
 
 /*********** Barre de recherche ***********/
 
-.fa-magnifying-glass, #border-barre a
+.fa-magnifying-glass, #border-barre i
 {
     display: none;
     color: white;
@@ -587,11 +586,6 @@ footer
         font-size: 16px;
     }
 
-    .populaires-cards .card-title
-    {
-        white-space: wrap;
-    }
-
     .card-subtitle
     {
         font-size: 14px;
@@ -629,11 +623,6 @@ footer
     .card-activites img
     {
         height: 200px;
-    }
-
-    .activites .card-title
-    {
-        white-space: wrap;
     }
 }
 
@@ -696,7 +685,7 @@ footer
 
 
     /*********** Barre de recherche ***********/
-    .fa-magnifying-glass /* loupe */
+    .fa-magnifying-glass, #border-barre i /* loupe */
     {
         display: block;
     }
@@ -751,8 +740,8 @@ footer
     {
         height: auto;
         width: 25px;
-        font-size: 12px;
-        line-height: 24px;
+        font-size: 11.5px;
+        line-height: 20px;
     }
 
 
@@ -851,11 +840,6 @@ footer
         gap: 15px;
     }
 
-    .card-title
-    {
-        white-space: wrap;
-    }
-
 
     /*********** Footer ***********/
     footer
@@ -875,6 +859,7 @@ footer
         margin-bottom: 50px;
     }
 }
+
 
 
 /* Largeur minimale de 320px */
