@@ -127,7 +127,7 @@ header
 
 /*********** Barre de recherche ***********/
 
-.fa-magnifying-glass
+.fa-magnifying-glass, #border-barre a
 {
     display: none;
     color: white;
@@ -286,7 +286,7 @@ header
     height: 24px;
     text-align: center;
     align-items: center;
-    line-height: 22px;
+    line-height: 23px;
     font-size: 12.5px;
 }
 
