@@ -199,7 +199,7 @@ header
     align-items: center;
 }
 
-#filtres-buttons article /* boutons */
+#filtres-buttons div /* boutons */
 {
     display: flex;
     align-items: center;
@@ -218,7 +218,7 @@ header
     display: flex;
 }
 
-#filtres-buttons article:hover /* survol */
+#filtres-buttons div:hover /* survol */
 {
     background-color: #DEEBFF;
 }
@@ -325,13 +325,6 @@ header
     margin-right: 40px;
 }
 
-.hebergements-title
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .hebergements-cards /* conteneur des cards / hors titre */
 {
     margin-top: 30px;
@@ -348,12 +341,11 @@ header
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 30px;
     padding-bottom: 30px;
 }
 
-.card-hebergement /* pour chaque card */
+.card-hebergement /* chaque card */
 {
     width: 250.33px;
     height: 207.25px;
@@ -725,15 +717,14 @@ footer
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: space-evenly;
     }
 
-    #filtres-buttons article
+    #filtres-buttons div
     {
         height: 50px;
         margin: 0;
-        width: calc(50% - 10px); /* permet d'avoir 2 rangées de 2 boutons */
-        box-sizing: border-box;
+        width: calc(50% - 10px); /* égalise la taille des boutons */
+        box-sizing: border-box; /* simplifie l'alignement en 2 colonnes */
     }
 
     #filtres-buttons p
