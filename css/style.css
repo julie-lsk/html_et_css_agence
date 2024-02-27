@@ -334,7 +334,7 @@ header
 /* permet aux cards de s'adapter à la taille du conteneur */
 .hebergements-cards a 
 {
-    width: 33%;
+    width: 100%;
 }
 
 .card-group1, .card-group2
@@ -347,8 +347,10 @@ header
 
 .card-hebergement /* chaque card */
 {
-    width: 250.33px;
-    height: 207.25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 90%;
     background-color: white;
     border-radius: 20px;
     padding: 4px;
@@ -400,10 +402,16 @@ header
     align-items: center;
 }
 
+.populaires-cards
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    min-width: 240px;
+    min-width: 210px;
 }
 
 .populaires-cards img {
@@ -540,7 +548,7 @@ footer
 
     #card-5
     {
-        font-size: 13.5px;
+        font-size: 12.75px;
     }
 
     .card-subtitle
